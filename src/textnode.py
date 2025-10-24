@@ -3,18 +3,18 @@ from enum import Enum
 
 # Define an enumeration for different types of text nodes
 class TextType(Enum):
-    PLAIN_TEXT = "plain_text"
-    BOLD_TEXT = "bold_text"
-    ITALIC_TEXT = "italic_text"
-    STRIKETHROUGH_TEXT = "strikethrough_text"
-    CODE_TEXT = "code_text"
-    LINK_TEXT = "link_text"
-    IMAGE_TEXT = "image_text"
+    PLAIN = "plain_text"
+    BOLD = "bold_text"
+    ITALIC = "italic_text"
+    STRIKETHROUGH = "strikethrough_text"
+    CODE = "code_text"
+    LINK = "link_text"
+    IMAGE = "image_text"
 
 
 class TextNode:
     def __init__(
-        self, text: str, text_type: TextType = TextType.PLAIN_TEXT, url: str = None
+        self, text: str, text_type: TextType = TextType.PLAIN, url: str = None
     ):
         self.text = text
         self.text_type = text_type
